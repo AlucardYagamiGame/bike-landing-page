@@ -35,6 +35,15 @@
     padding-bottom: 16px;
     font-size: 16px;
     line-height: 27px;
+    transition:
+      opacity 0.3s ease-in-out,
+      letter-spacing 0.3s ease-in-out;
+
+    &:hover,
+    &:focus-visible {
+      opacity: 0.6;
+      letter-spacing: 1px;
+    }
   }
 
   &__book-a-test-ride {
@@ -46,6 +55,16 @@
     display: block;
     width: fit-content;
     border-bottom: 1px solid $color-black;
+    transition:
+      letter-spacing 0.3s ease-in-out,
+      border-color 0.3s ease-in-out,
+      opacity 0.3s ease-in-out;
+
+    &:hover,
+    &:focus-visible {
+      letter-spacing: 3px;
+      opacity: 0.6;
+    }
   }
 
   &__nav {

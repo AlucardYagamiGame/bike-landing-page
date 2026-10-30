@@ -32,8 +32,15 @@
       transform-origin: left;
     }
 
-    &:hover::after {
+    transition: opacity 0.3s ease-in-out;
+
+    &:hover::after,
+    &:focus-visible::after {
       transform: scale(1);
+    }
+
+    &:hover {
+      opacity: 0.7;
     }
   }
 }

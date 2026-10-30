@@ -29,6 +29,11 @@
     text-align: right;
     vertical-align: middle;
     text-transform: uppercase;
+    transition: opacity 0.3s ease-in-out;
+
+    &:hover {
+      opacity: 0.6;
+    }
   }
 
   &__icons:has(.icon--phone:hover) &__extra-phone {

@@ -9,9 +9,11 @@
   }
 
   &__img {
+    display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transition: transform 0.4s ease-in-out;
   }
 
   &__images {
@@ -50,6 +52,14 @@
   }
 
   &__link {
+    display: block;
+    overflow: hidden;
+
+    &:hover .card__img,
+    &:focus-visible .card__img {
+      transform: scale(1.08);
+    }
+
     &--wide {
       @include on-tablet {
         grid-column: span 4;
